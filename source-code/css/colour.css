@@ -1,0 +1,37 @@
+:root {
+  /* orange */
+  --orange-hue: 21;
+  --orange-sat: 97;
+
+  /* rose */
+  --orange-hue: 346;
+  --orange-sat: 91;
+
+  /* success */
+  --success-hue: 152;
+  --success-sat: 82;
+
+  /* blue gray */
+  --blue-gray-hue: 232;
+  --blue-gray-sat: 36;
+
+  /* blue */
+  --blue-hue: 211;
+  --blue-sat: 95;
+
+  /* pink */
+  --pink-hue: 318;
+  --pink-sat: 83;
+
+  /* purple */
+  --purple-hue: 252;
+  --purple-sat: 91;
+
+  /* warning */
+  --warning-hue: 34;
+  --warning-sat: 94;
+
+  /* error */
+  --error-hue: 4;
+  --error-sat: 97;
+}
