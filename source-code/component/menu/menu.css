@@ -1,0 +1,61 @@
+.menu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.menu__row {
+  display: grid;
+  grid-template-columns: 1fr 56px;
+  display: none;
+}
+
+.menu__row[first] {
+  display: grid;
+}
+
+.menu__row > .menu__icon:first-child {
+  justify-self: end;
+}
+
+.menu__link {
+  justify-self: end;
+  line-height: 56px;
+  padding: 0 1rem;
+
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.menu__icon {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+.menu__icon::before {
+  content: "";
+
+  background-image: var(--image);
+  position: absolute;
+  background-size: contain;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+#toggle-menu:checked + .menu__row label {
+  --image: url(../../../library/icon/cross.png) !important;
+}
+
+#toggle-menu:checked ~ .menu__row {
+  display: grid;
+}
+
+#toggle-menu {
+  display: none;
+}
