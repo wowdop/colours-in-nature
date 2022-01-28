@@ -1,37 +1,36 @@
-:root {
-  /* orange */
-  --orange-hue: 21;
-  --orange-sat: 97;
-
-  /* rose */
-  --orange-hue: 346;
-  --orange-sat: 91;
-
-  /* success */
-  --success-hue: 152;
-  --success-sat: 82;
-
-  /* blue gray */
-  --blue-gray-hue: 232;
-  --blue-gray-sat: 36;
-
-  /* blue */
-  --blue-hue: 211;
-  --blue-sat: 95;
-
-  /* pink */
-  --pink-hue: 318;
-  --pink-sat: 83;
-
-  /* purple */
-  --purple-hue: 252;
-  --purple-sat: 91;
-
-  /* warning */
-  --warning-hue: 34;
-  --warning-sat: 94;
-
-  /* error */
-  --error-hue: 4;
-  --error-sat: 97;
+[theme="orange"] {
+  --hue: 21;
+  --sat: 97%;
+}
+[theme="rose"] {
+  --hue: 346;
+  --sat: 91%;
+}
+[theme="success"] {
+  --hue: 152;
+  --sat: 82%;
+}
+[theme="blue-gray"] {
+  --hue: 232;
+  --sat: 36%;
+}
+[theme="blue"] {
+  --hue: 211;
+  --sat: 95%;
+}
+[theme="pink"] {
+  --hue: 318;
+  --sat: 83%;
+}
+[theme="purple"] {
+  --hue: 252;
+  --sat: 91%;
+}
+[theme="warning"] {
+  --hue: 34;
+  --sat: 94%;
+}
+[theme="error"] {
+  --hue: 4;
+  --sat: 97%;
 }
