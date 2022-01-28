@@ -34,3 +34,8 @@
   --hue: 4;
   --sat: 97%;
 }
+
+[theme="blue-light"] {
+  --hue: 199;
+  --sat: 91%;
+}

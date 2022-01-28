@@ -88,6 +88,6 @@
   background-color: hsl(var(--hue), var(--sat), 60%);
 }
 
-[theme] #toggle-menu + .menu__row div:first-child {
+[theme] #toggle-menu + .menu__row a {
   background-color: hsl(var(--hue), var(--sat), 70%);
 }
