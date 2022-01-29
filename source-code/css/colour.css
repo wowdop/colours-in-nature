@@ -1,0 +1,41 @@
+[theme="orange"] {
+  --hue: 21;
+  --sat: 97%;
+}
+[theme="rose"] {
+  --hue: 346;
+  --sat: 91%;
+}
+[theme="success"] {
+  --hue: 152;
+  --sat: 82%;
+}
+[theme="blue-gray"] {
+  --hue: 232;
+  --sat: 36%;
+}
+[theme="blue"] {
+  --hue: 211;
+  --sat: 95%;
+}
+[theme="pink"] {
+  --hue: 318;
+  --sat: 83%;
+}
+[theme="purple"] {
+  --hue: 252;
+  --sat: 91%;
+}
+[theme="warning"] {
+  --hue: 34;
+  --sat: 94%;
+}
+[theme="error"] {
+  --hue: 4;
+  --sat: 97%;
+}
+
+[theme="blue-light"] {
+  --hue: 199;
+  --sat: 91%;
+}

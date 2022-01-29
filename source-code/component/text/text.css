@@ -1,0 +1,34 @@
+/* .text[type="normal"] { */
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text[type="title"] {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.star {
+  list-style-type: "*";
+}
+
+.lower {
+  list-style-type: lower-latin;
+}
+
+.upper {
+  list-style-type: upper-latin;
+}
+
+ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.flex {
+  padding: 1rem;
+}

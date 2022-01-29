@@ -1,0 +1,45 @@
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(var(--hue), var(--sat), 80%);
+}
+
+.divider {
+  height: 56px;
+}
+
+section {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

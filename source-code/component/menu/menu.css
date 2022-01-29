@@ -1,0 +1,93 @@
+.menu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.menu[position="top"] {
+  top: 0;
+  height: 56px;
+  bottom: initial;
+}
+
+.menu[position="top"] .menu__row .menu__link {
+  display: block;
+  grid-column: 1 / -1;
+  min-height: 56px;
+}
+
+.menu__row {
+  display: grid;
+  grid-template-columns: 1fr 56px;
+  display: none;
+  min-height: 56px;
+}
+
+.menu__row[first] {
+  display: grid;
+}
+
+.menu__row > .menu__icon:first-child {
+  justify-self: end;
+}
+
+.menu__link {
+  justify-self: end;
+  line-height: 56px;
+  padding: 0 1rem;
+  color: white;
+
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.menu__icon {
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+.menu__icon::before {
+  content: "";
+
+  background-image: var(--image);
+  position: absolute;
+  background-size: contain;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+#toggle-menu:checked + .menu__row label {
+  --image: url(../../../library/icon/cross.png) !important;
+}
+
+#toggle-menu:checked ~ .menu__row {
+  display: grid;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+/* theme */
+[theme] .menu__link {
+  background-color: hsl(var(--hue), var(--sat), 40%);
+}
+
+[theme] .menu__link + div {
+  background-color: hsl(var(--hue), var(--sat), 50%);
+}
+
+[theme] .menu__row label {
+  background-color: hsl(var(--hue), var(--sat), 60%);
+}
+
+[theme] #toggle-menu + .menu__row a {
+  background-color: hsl(var(--hue), var(--sat), 70%);
+}
